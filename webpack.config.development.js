@@ -12,10 +12,40 @@ import baseConfig from './webpack.config.base';
 
 const port = process.env.PORT || 3000;
 
+var lib_dir = __dirname + '/public/libraries',
+  node_dir = __dirname + '/node_modules',
+  bower_dir = __dirname + '/bower_components',
+  plugins_dir = __dirname + '/public/plugins';
+
+
 export default validate(merge(baseConfig, {
   debug: true,
 
   devtool: 'cheap-module-eval-source-map',
+
+  resolve: {
+    alias: {
+      react: node_dir + '/react',
+      reactDom: lib_dir + '/react-dom',
+      jquery: lib_dir + '/jQuery-2.1.4.min.js',
+      velocity: lib_dir + '/velocity.min.js',
+      jqueryUi: plugins_dir + '/jQueryUI/jquery-ui.min.js',
+      bootstrap: plugins_dir + '/bootstrap/js/bootstrap.min.js',
+      //eve: node_dir + '/raphael/eve/eve.js',
+      raphael: node_dir + '/raphael/raphael.js',
+      morris: plugins_dir + '/morris/morris.js',
+      //sparkline: plugins_dir + '/sparkline/jquery.sparkline.min.js',
+      jvectormap: plugins_dir + '/jvectormap/jquery-jvectormap-1.2.2.min.js',
+      jvectormapWorld: plugins_dir + '/jvectormap/jquery-jvectormap-world-mill-en.js',
+      //knob: plugins_dir + '/knob/jquery.knob.js',
+      moment: plugins_dir + '/moment/moment.js',
+      //daterangepicker: plugins_dir + '/daterangepicker/daterangepicker.js',
+      bootstrapDatepicker: plugins_dir + '/datepicker/bootstrap-datepicker.js',
+      //bootstrapWysihtml5: plugins_dir + '/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js',
+      slimscroll: plugins_dir + '/slimScroll/jquery.slimscroll.min.js',
+      fastclick: plugins_dir + '/fastclick/fastclick.min.js',
+    }
+  },
 
   entry: [
     `webpack-hot-middleware/client?path=http://localhost:${port}/__webpack_hmr`,

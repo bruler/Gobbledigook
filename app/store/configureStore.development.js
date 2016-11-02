@@ -3,12 +3,10 @@ import thunk from 'redux-thunk';
 import { hashHistory } from 'react-router';
 import { routerMiddleware, push } from 'react-router-redux';
 import createLogger from 'redux-logger';
-import rootReducer from '../reducers';
+import rootReducer from '../reducers/index';
 
-import * as counterActions from '../actions/counter';
 
 const actionCreators = {
-  ...counterActions,
   push,
 };
 
@@ -26,9 +24,10 @@ const enhancer = compose(
     noop => noop
 );
 
+
+//noinspection JSAnnotator
 export default function configureStore(initialState: Object) {
   const store = createStore(rootReducer, initialState, enhancer);
-
   if (window.devToolsExtension) {
     window.devToolsExtension.updateStore(store);
   }

@@ -37,10 +37,10 @@ app.on('ready', async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
+    width: 1366,
+    height: 768,
     icon: __dirname + '/icon.png',
-    frame: false
+    // frame: false
   });
 
   mainWindow.loadURL(`file://${__dirname}/app/app.html`);

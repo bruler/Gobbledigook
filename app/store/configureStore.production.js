@@ -9,6 +9,7 @@ const router = routerMiddleware(hashHistory);
 
 const enhancer = applyMiddleware(thunk, router);
 
+//noinspection JSAnnotator
 export default function configureStore(initialState: Object) {
   return createStore(rootReducer, initialState, enhancer);
 }
