@@ -13,7 +13,7 @@ define(
                             {/* Sidebar user panel */}
                             <div className="user-panel">
                                 <div className="pull-left image">
-                                    <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+                                    <img src="/home/cortana/Projects/JSProjects/gobbledigook/public/dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
                                 </div>
                                 <div className="pull-left info">
                                     <p>Alexander Pierce</p>
@@ -35,10 +35,10 @@ define(
                                 <li className="header">MAIN NAVIGATION</li>
                                 <li className="active treeview">
                                     <a href="#">
-                                        <i className="fa fa-dashboard"></i> 
+                                        <i className="fa fa-dashboard"></i>
                                         <span>
                                             Dashboard
-                                        </span> 
+                                        </span>
                                         <i className="fa fa-angle-left pull-right"></i>
                                     </a>
                                     <ul className="treeview-menu">
@@ -62,7 +62,7 @@ define(
                                 <li>
                                     <a href="pages/widgets.html">
                                         <i className="fa fa-th"></i>
-                                        <span>Widgets</span> 
+                                        <span>Widgets</span>
                                         <small className="label pull-right bg-green">new</small>
                                     </a>
                                 </li>

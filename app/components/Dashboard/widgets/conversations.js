@@ -27,7 +27,7 @@ export default class Conversations extends React.Component {
 
       },
       {
-        displayPicture: "dist/img/user2-160x160.jpg",
+        displayPicture: "/home/cortana/Projects/JSProjects/gobbledigook/public/dist/img/user2-160x160.jpg",
         time: "5:30",
         content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
-import Raphael from 'raphael';
-import Morris from 'morris';
+// import Raphael from 'raphael';
+// import Morris from 'morris';
 import { jvectormap } from 'jvectormap';
 import { jvectormapWorld } from 'jvectormapWorld';
 

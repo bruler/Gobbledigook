@@ -9,19 +9,16 @@ export default class NavigationMenu extends React.Component {
 
     return(
       <aside className="main-sidebar">
-        /!* sidebar: style can be found in sidebar.less *!/
         <section className="sidebar" >
-          /!* Sidebar user panel *!/
           <div className="user-panel">
             <div className="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+              <img src="/home/cortana/Projects/JSProjects/gobbledigook/public/dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
             </div>
             <div className="pull-left info">
               <p>Alexander Pierce</p>
               <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
-          /!* search form *!/
           <form action="#" method="get" className="sidebar-form">
             <div className="input-group">
               <input type="text" name="q" className="form-control" placeholder="Search..." />
@@ -30,8 +27,6 @@ export default class NavigationMenu extends React.Component {
                                   </span>
             </div>
           </form>
-          /!* /.search form *!/
-          /!* sidebar menu: : style can be found in sidebar.less *!/
           <ul className="sidebar-menu">
             <li className="header">MAIN NAVIGATION</li>
             <li className="active treeview">
@@ -174,7 +169,7 @@ export default class NavigationMenu extends React.Component {
             <li><a href="#"><i className="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
           </ul>
         </section>
-        /!* /.sidebar *!/
+
       </aside>
     )
   }
